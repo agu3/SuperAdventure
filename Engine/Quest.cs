@@ -14,6 +14,16 @@ namespace Engine
         public int RewardExperiencePoints { get; set; }
         public int RewardGold { get; set; }
 
+        public Quest(int id, string name, string description, int rewardExperiencePoints, int rewardGold)
+        {
 
+            ID = id;
+            Name = name;
+            Description = description;
+            RewardExperiencePoints = rewardExperiencePoints;
+            RewardGold = rewardGold;
+        }
+
+        public Item RewardItem { get; set; }
     }
 }
